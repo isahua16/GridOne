@@ -1,17 +1,72 @@
-/* Error: Undefined variable.
- *    ,
- * 36 |     color: $font-color;
- *    |            ^^^^^^^^^^^
- *    '
- *   scss/style.scss 36:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 36 \2502      color: $font-color;\a    \2502             ^^^^^^^^^^^\a    \2575 \a   scss/style.scss 36:12  root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+}
+
+#hero_img {
+  justify-self: center;
+  width: 100%;
+  max-width: 700px;
+  min-height: 45vh;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 30% 50%;
+  margin-bottom: 8px;
+}
+
+#page_main {
+  width: 75%;
+  height: auto;
+  margin-left: 5%;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+#page_main > h2 {
+  color: #343a40;
+}
+#page_main > p {
+  color: #868e96;
+  line-height: 22px;
+}
+
+#page_nav {
+  justify-self: center;
+  align-self: end;
+  width: 90%;
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+#page_nav > .btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+}
+#page_nav > .white {
+  border: 1px solid #868e96;
+  color: #343a40;
+}
+#page_nav > .blue {
+  background-color: #5082c0;
+  color: #f8f9fa;
+}
+
+/*# sourceMappingURL=style.css.map */
