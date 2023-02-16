@@ -1,3 +1,5 @@
+@use "general";
+
 * {
   padding: 0;
   margin: 0;
@@ -31,7 +33,7 @@ body {
   grid-template-rows: auto auto;
   gap: 24px;
   > h2 {
-    color: #343a40;
+    color: $font-color;
   }
   > p {
     color: #868e96;
