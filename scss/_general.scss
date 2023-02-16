@@ -1,2 +1,9 @@
-$font-color: #343a40;
-$font-secondary-color: #868e96;
+$dark-font-color: #343a40;
+$light-font-color: #868e96;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
