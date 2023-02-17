@@ -8,7 +8,7 @@ body {
 
 #page_header {
   width: 100%;
-  min-height: 15vh;
+  min-height: 12vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -31,10 +31,17 @@ body {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     margin-right: 8px;
-    > img {
-      background-color: general.$primary-color;
-      border-radius: 50%;
-      padding: 10px 10px;
-    }
   }
+}
+
+.icon {
+  background-color: general.$primary-color;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+#balance {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 2fr;
 }
